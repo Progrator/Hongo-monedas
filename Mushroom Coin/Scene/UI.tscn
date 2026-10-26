@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dxxsycg1xsq4x"]
+
+[ext_resource type="Texture2D" uid="uid://j230a6nyo5mb" path="res://Assets/Rocky Roads/Rocky Roads/UI/coin.png" id="1_we040"]
+[ext_resource type="Script" uid="uid://cyukjqtjv2j5v" path="res://Scripts/ui.gd" id="1_ycrtq"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=128740440]
+script = ExtResource("1_ycrtq")
+
+[node name="CantidadDeMonedas" type="Control" parent="." unique_id=2043331110]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 26.0
+
+[node name="Texto" type="Label" parent="CantidadDeMonedas" unique_id=1511767253]
+layout_mode = 0
+offset_left = 63.0
+offset_top = -7.0
+offset_right = 149.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 75
+text = "0"
+
+[node name="Node2D" type="Node2D" parent="CantidadDeMonedas" unique_id=1692894483]
+
+[node name="Sprite2D" type="Sprite2D" parent="CantidadDeMonedas/Node2D" unique_id=13042020]
+position = Vector2(31, 49.000004)
+scale = Vector2(4.6875, 4.6875)
+texture = ExtResource("1_we040")
+hframes = 6
